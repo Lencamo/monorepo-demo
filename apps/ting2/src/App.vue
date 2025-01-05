@@ -1,8 +1,10 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import { sayHello } from '@monorepo/utils'
+import { chatTools } from '@monorepo/utils'
 
-const msg = sayHello('ting2')
+const { seedSingleMsg } = chatTools()
+
+const msg = seedSingleMsg('ting2')
 </script>
 
 <template>

@@ -1,14 +1,23 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import { logoShow } from '@monorepo/components/common'
-import { one } from '@monorepo/components'
-import { sayHello } from '@monorepo/utils'
+import { one, two } from '@monorepo/components'
+import { inputItem, mediaItem } from '@monorepo/components/formItem'
+import { chatTools } from '@monorepo/utils'
 
-const msg = sayHello('ting1')
+const { seedSingleMsg } = chatTools()
+
+const msg = seedSingleMsg('ting1')
 </script>
 
 <template>
   <logoShow />
-  <one />
+
+  <one msg="1" />
+  <two />
+
+  <inputItem />
+  <mediaItem />
+
   <HelloWorld :msg="msg" />
 </template>

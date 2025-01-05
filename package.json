@@ -3,7 +3,9 @@
   "private": true,
   "scripts": {
     "ting1:dev": "pnpm -F ting1 run dev",
-    "ting2:dev": "pnpm -F ting2 run dev"
+    "ting2:dev": "pnpm -F ting2 run dev",
+    "component:export": "pnpm -F @monorepo/components run generate",
+    "utils:export": "pnpm -F @monorepo/utils run generate"
   },
   "dependencies": {
     "vue": "^3.5.13"
