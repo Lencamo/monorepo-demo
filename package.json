@@ -1,0 +1,15 @@
+{
+  "name": "monorepo-demo",
+  "private": true,
+  "scripts": {
+    "ting1:dev": "pnpm -F ting1 run dev",
+    "ting2:dev": "pnpm -F ting2 run dev"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.0.5"
+  }
+}
