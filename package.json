@@ -4,6 +4,8 @@
   "scripts": {
     "ting1:dev": "pnpm -F ting1 run dev",
     "ting2:dev": "pnpm -F ting2 run dev",
+    "uniapp1:dev": "pnpm -F uniapp1 run dev:mp-weixin",
+    "uniapp2:dev": "pnpm -F uniapp2 run dev:mp-weixin",
     "component:export": "pnpm -F @monorepo/components run generate",
     "utils:export": "pnpm -F @monorepo/utils run generate"
   },
