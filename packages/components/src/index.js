@@ -1,2 +1,4 @@
-export { default as one } from './one.vue';
-export { default as two } from './two.vue';
+import demo1 from "./component/demo1/index.vue";
+import demo2 from "./component/demo2/index.vue";
+
+export { demo1, demo2 };

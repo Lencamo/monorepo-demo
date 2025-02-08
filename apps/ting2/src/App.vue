@@ -1,35 +1,16 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import { chatTools } from '@monorepo/utils'
+import HelloWorld from "./components/HelloWorld.vue";
+import { demo1, demo2 } from "@monorepo/components";
+import { chatTools } from "@monorepo/utils/src";
 
-const { seedSingleMsg } = chatTools()
+const { seedSingleMsg } = chatTools();
 
-const msg = seedSingleMsg('ting2')
+const msg = seedSingleMsg("ting2");
+console.log("公共方法：", msg);
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
   <HelloWorld :msg="msg" />
+  <demo1 :msg="msg"></demo1>
+  <demo2></demo2>
 </template>
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>

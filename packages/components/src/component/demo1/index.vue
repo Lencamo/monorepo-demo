@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h2>one-{{ msg }}</h2>
+  <div class="demo1">
+    <h2>传递的参数为：{{ msg }}</h2>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 const props = defineProps({
   msg: {
     type: String,
-    default: 'hello'
-  }
-})
+    default: "hello",
+  },
+});
 </script>

@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@monorepo/utils": "workspace:*"
+    "@monorepo/utils": "workspace:*",
+    "@monorepo/components": "workspace:*"
   }
 }
